@@ -8,7 +8,7 @@ module.exports = {
     container: ({ theme }) => ({
       center: true,
       padding: {
-        // DEFAULT: theme('spacing.f-2'),
+        DEFAULT: theme('spacing.f-2'),
       },
     }),
     extend: {
