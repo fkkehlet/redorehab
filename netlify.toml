@@ -1,0 +1,18 @@
+[[redirects]]
+    from = "https://redorehab.netlify.app/*"
+    to = "https://redo.rehab/:splat"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "https://redorehab.com/*"
+    to = "https://redo.rehab/:splat"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "https://www.redorehab.com/*"
+    to = "https://redo.rehab/:splat"
+    status = 301
+    force = true
+
