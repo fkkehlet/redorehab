@@ -1,15 +1,67 @@
 ---
+import Layout from '@layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="redo. rehab." description="join the revolution.">
+  <div class="bg-[url(/background.jpg)] bg-cover bg-center">
+    <div class="bg-gradient-to-br from-amber-700/70 via-teal-700/30 to-violet-700/50">
+      <div class="container">
+        <div class="ml-auto min-h-screen space-y-f-6 max-w-md md:max-w-xl bg-stone-950 pt-f-8 px-f-8">
+          <div class="font-heading font-extrabold space-y-f-2">
+            <p class="text-f-lg"
+              ><span class="text-zinc-300 font-medium">re</span>think. <span class="text-zinc-300 font-medium">re</span
+              >define.</p
+            >
+            <h1 class="text-f-5xl leading-none"
+              ><span class="text-zinc-300 font-medium">re</span>do.<br /><span class="text-zinc-300 font-medium"
+                >re</span
+              >hab.</h1
+            >
+          </div>
+          <div class="space-y-f-2">
+            <h2 class="text-f-xl font-extrabold">Physiotherapy is moving fast.</h2>
+            <p>
+              Or rather, the science is. Practical adoption remains slow, and many health professionals still, to this
+              day, base their clinical practice on myths debunked decades ago.
+            </p>
+            <p>
+              Outdated ideas harm people in very real ways. Well-intentioned as they may be, wrong explanations for pain
+              and misguided advice on how to manage it can be distressing, disabling, and destroy lives.
+            </p>
+            <p>
+              My name is Frederik, and I am among the growing number of "new-school" physiotherapists who work hard to
+              evolve the traditional model, pushing the boundaries of my knowledge and skills to give people in pain the
+              care they deserve.
+            </p>
+            <p>
+              Building on a foundation of honest, open communication, I put <em class="not-italic underline">you</em>
+               at the center of care. I will listen to your story, respect your decisions, and empower you with the
+              tools you need to be more independent.
+            </p>
+            <p>
+              You are capable of so much more than you think. You have the ability to overcome unimaginable obstacles
+              and experience incredible personal growth along the way.
+            </p>
+            <p>
+              If what you're currently doing isn't working for you, don't hesitate to reach out for a consultation. If
+              I'm not the right one to help you, I'll be the first to tell you.
+            </p>
+            <p>No magic pills. No quick fixes. No bullshit.</p>
+            <p
+              ><strong class="font-extrabold">Let's get you on track to getting your life back!</strong><br />
+               ↝ <a href="mailto:help@redo.rehab" class="underline hover:text-amber-300">help@redo.rehab</a>
+            </p>
+          </div>
+          <p>
+            <strong class="font-extrabold">Check out free pain rehab resources!</strong><br />
+             ↝ <a class="underline hover:text-amber-300" href="https://bevae.com/" target="_blank">https://bevae.com</a>
+          </p>
+          <div class="flex items-end">
+            <img src="/fred.png" alt="A photo of Frederik" width="150" height="150" class="grayscale" />
+            <p class="pb-f-8 text-f-sm">↜ that's me :)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

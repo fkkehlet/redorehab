@@ -4,5 +4,9 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://redo.rehab',
+  experimental: {
+    assets: true
+  },
   integrations: [tailwind()]
 });
