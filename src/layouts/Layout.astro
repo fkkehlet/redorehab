@@ -12,33 +12,36 @@ export interface Props {
 const { title, description, ogType = 'website', ogImage = '' } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <SEO
-      charset="UTF-8"
-      title={title}
-      description={description}
-      openGraph={{
-        basic: {
-          type: ogType,
-          title: title,
-          image: ogImage,
-        },
-        optional: {
-          siteName: 'redo. rehab.',
-        },
-      }}
-      extend={{
-        link: [{ rel: 'sitemap', href: '/sitemap-index.xml' }],
-        meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-      }}
-    />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={Astro.url.href} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="redo rehab." />
   </head>
 
-  <body class="bg-zinc-50 text-zinc-50 text-f-base font-body">
+  <body class="bg-zinc-50 font-body text-f-base text-zinc-50">
     <main>
-      <slot />
+      <div class="bg-[url(/background.jpg)] bg-cover bg-center">
+        <div class="bg-gradient-to-br from-amber-700/70 via-teal-200/30 to-violet-700/50">
+          <div class="container">
+            <div class="ml-auto min-h-screen max-w-md space-y-f-6 bg-stone-950 px-f-6 pt-f-4 md:max-w-xl">
+              <slot />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body></html
 >
