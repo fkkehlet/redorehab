@@ -28,3 +28,9 @@ Whereby
 Professional lighting and video setting?
 
 How do you make a connection?
+
+
+## Inspiration
+
+- https://marioredondo.org/
+- https://neurocognitiverehabilitation.com/
